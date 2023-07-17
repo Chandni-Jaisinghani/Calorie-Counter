@@ -1,0 +1,614 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	<style>
+
+		h1{
+			font-size:50px;
+			font-style:italic;
+			position:absolute;
+			top:90px;
+			right: 500px;
+			left:690px;
+			color: #7F5A58
+	}
+		h2{
+			position:absolute;
+			right:1485px;
+			top:150px;
+			left:0px;
+			font-size:40px;
+			color:#3C565B
+	}
+		#i1{
+			position:absolute;
+			top: 210px;
+			right:1600px;
+			left:10;
+					
+
+	}
+		h3{
+			position:absolute;
+			right:1650px;
+			top:450px;
+			left:7px;
+			font-size:30px;
+		
+	}
+		h4{
+			position:absolute;
+			right:1600px;
+			top:490px;
+			left:100px;
+			font-size:20px;
+		
+	}
+		#i2{
+			position:absolute;
+			top: 210px;
+			right:1500px;
+			left:500px;
+					
+
+	}
+		h5{
+			position:absolute;
+			right:200px;
+			left:500px;
+			top:450px;
+			font-size:30px;
+		
+	}
+		h6{
+			position:absolute;
+			right:0px;
+			top:490px;
+			left:550px;
+			font-size:20px;
+		
+	}
+
+		#i3{
+			position:absolute;
+			top: 210px;
+			right:0px;
+			left:1000px;
+					
+
+	}
+		h7{
+			position:absolute;
+			right:700px;
+			top:450px;
+			font-size:30px;
+			
+	}
+		h8{
+			position:absolute;
+			right:10px;
+			top:490px;
+			left:1100px;
+			font-size:20px;
+		
+	}
+
+		#i4{
+			position:absolute;
+			top: 210px;
+			right:0px;
+			left:1500px;
+					
+
+	}
+		h9{
+			position:absolute;
+			right:150px;
+			top:450px;
+			font-size:30px;
+			
+	}
+		h10{
+			position:absolute;
+			right:10px;
+			top:490px;
+			left:1580px;
+			font-size:20px;
+		
+	}
+		h11{
+			position:absolute;
+			right:1700px;
+			top:560px;
+			left:0px;
+			font-size:40px;
+			color:#F67280
+	}
+		#i5{
+			position:absolute;
+			top: 620px;
+			right:1600px;
+			left:0;
+					
+
+	}
+		#i6{
+			position:absolute;
+			top: 620px;
+			right:1100px;
+			left:1300;
+					
+
+	}
+		#i7{
+			position:absolute;
+			top: 620px;
+			right:700px;
+			left:1000;
+					
+
+	}
+
+		h12{
+			position:absolute;
+			right:1700px;
+			top:850px;
+			left:25px;
+			font-size:30px;
+		
+	}
+		h14{
+			position:absolute;
+			right:1110px;
+			top:850px;
+			font-size:30px;
+		
+	}
+		h16{
+			position:absolute;
+			right:690px;
+			top:850px;
+			font-size:30px;
+			
+	}
+		h13{
+			position:absolute;
+			right:1650px;
+			top:885px;
+			left:90px;
+			font-size:20px;
+		
+	}
+		h15{
+			position:absolute;
+			right:500px;
+			top:885px;
+			left:580px;
+			font-size:20px;
+		
+	}	
+		h17{
+			position:absolute;
+			right:10px;
+			top:885px;
+			left:1000px;
+			font-size:20px;
+		
+	}
+
+		h18{
+			position:absolute;
+			right:1450px;
+			top:930px;
+			left:0px;
+			font-size:40px;
+			color:#8467D7
+	}
+
+		#i8{
+			position:absolute;
+			top: 990px;
+			right:1600px;
+			left:10;
+					
+
+	}
+
+		#i9{
+			position:absolute;
+			top: 990px;
+			right:1160px;
+			left:500;
+					
+
+	}
+		#i10{
+			position:absolute;
+			top: 990px;
+			right:900px;
+			left:1000px;
+					
+
+	}
+
+		#i11{
+			position:absolute;
+			top: 990px;
+			right:0px;
+			left:1490px;
+					
+
+	}
+
+		h19{
+			position:absolute;
+			right:1530px;
+			top:1220px;
+			left:0px;
+			font-size:30px;
+		
+	}
+		h21{
+			position:absolute;
+			right:1110px;
+			top:1220px;
+			font-size:30px;
+		
+	}
+		h23{
+			position:absolute;
+			right:660px;
+			top:1220px;
+			font-size:30px;
+			
+	}
+
+		h25{
+			position:absolute;
+			right:180px;
+			top:1220px;
+			font-size:30px;
+			
+	}
+
+		h20{
+			position:absolute;
+			right:1700px;
+			top:1255px;
+			left:80px;
+			font-size:22px;
+		
+	}
+		h22{
+			position:absolute;
+			right:800px;
+			top:1255px;
+			left:500px;
+			font-size:22px;
+		
+	}
+
+		h24{
+			position:absolute;
+			right:10px;
+			top:1255px;
+			left:1050px;
+			font-size:22px;
+		
+	}
+
+		h26{
+			position:absolute;
+			right:10px;
+			top:1255px;
+			left:1600px;
+			font-size:22px;
+		
+	}
+		h27{
+			position:absolute;
+			right:1450px;
+			top:1310px;
+			left:0px;
+			font-size:40px;
+			color:#A70D2A
+
+	}
+		#i12{
+			position:absolute;
+			top: 1370px;
+			right:1600px;
+			left:10;
+					
+
+	}
+
+		#i13{
+			position:absolute;
+			top: 1370px;
+			right:768px;
+			left:500px;
+					
+
+	}
+		#i14{
+			position:absolute;
+			top: 1370px;
+			right:590px;
+			left:800;
+					
+
+	}
+		h28{
+			position:absolute;
+			right:1470px;
+			top:1600px;
+			left:0px;
+			font-size:30px;
+		
+	}
+		h30{
+			position:absolute;
+			right:1200px;
+			top:1600px;
+			font-size:30px;
+		
+	}
+		h32{
+			position:absolute;
+			right:660px;
+			top:1600px;
+			font-size:30px;
+			
+	}
+
+		h29{
+			position:absolute;
+			right:1650px;
+			top:1640px;
+			left:90px;
+			font-size:22px;
+		
+	}
+		h31{
+			position:absolute;
+			right:100px;
+			top:1640px;
+			left:570px;
+			font-size:22px;
+		
+	}
+
+		h33{
+			position:absolute;
+			right:10px;
+			top:1640px;
+			left:1100px;
+			font-size:22px;
+		
+	}
+		h34{
+			position:absolute;
+			right:1450px;
+			top:1720px;
+			left:0px;
+			font-size:40px;
+			color:#B5A642
+
+
+	}
+		#i15{
+			position:absolute;
+			top:1780px;
+			right:1600px;
+			left:0;
+					
+
+	}
+
+		#i16{
+			position:absolute;
+			top: 1780px;
+			right:2600px;
+			left:500px;
+					
+
+	}
+		#i17{
+			position:absolute;
+			top: 1780px;
+			right:700px;
+			left:1400;
+					
+
+	}
+		h35{
+			position:absolute;
+			right:1700px;
+			top:2010px;
+			left:40px;
+			font-size:30px;
+		
+	}
+		h37{
+			position:absolute;
+			right:1120px;
+			top:2010px;
+			font-size:30px;
+		
+	}
+		h39{
+			position:absolute;
+			right:650px;
+			top:2010px;
+			font-size:30px;
+			
+	}
+		h36{
+			position:absolute;
+			right:1650px;
+			top:2050px;
+			left:50px;
+			font-size:22px;
+		
+	}
+		h38{
+			position:absolute;
+			right:1000px;
+			top:2050px;
+			left:590px;
+			font-size:22px;
+		
+	}
+
+		h40{
+			position:absolute;
+			right:10px;
+			top:2050px;
+			left:1050px;
+			font-size:22px;
+		
+	}
+	
+
+		
+		
+	
+	</style>
+
+	<h1> Healthy Recipes  </h1>
+
+	<b><h2> Rice Based Dishes</b> </h2>
+	
+	<p>
+	<a href="https://youtu.be/SZByh7nXp1U">
+	<img id="i1" src="{% static 'riceveg.png' %}"></img>
+	</a>
+	</p>
+	<h3>Vegetable Briyani </h3>
+	<h4> 115.42 Cal</h4>
+
+	<p>
+	<a href="https://youtu.be/FsEsRpimTcU">
+	<img id="i2" src="{% static 'ricecorn.png' %}"></img>
+	</a>
+	</p>
+	<h5> Sweet Corn Pulao </h5>
+	<h6> 110.66 Cal</h6>
+	
+	<p>
+	<a href="https://youtu.be/EZvNhZF0-LA">
+	<img id="i3" src="{% static 'ricemint.jpg' %}"></img>	
+	</a>
+	</p>
+	<h7>Mint Rice </h7>
+	<h8> 108.86 Cal</h8>
+	
+	<p>
+	<a href="https://youtu.be/MMLR51t7yqw">
+	<img id="i4" src="{% static 'ricequinoa.jpg' %}"></img>
+	</a>
+	</p>
+	<h9>Quinoa Brown Rice </h9>
+	<h10> 90.59 Cal</h10>
+
+	<b><h11>Salads</b></h11>
+
+	<p>
+	<a href="https://youtu.be/iDhjlrAzT8s">
+	<img id="i5" src="{% static 'saladchana.jfif' %}"></img>	
+	</a>
+	</p>
+	<h12> Chana Salad </h12>
+	<h13> 223.98 Cal </h13>
+
+	<p>
+	<a href="https://youtu.be/_DUnKSLc_LA">
+	<img id="i6" src="{% static 'saladgreek.jfif' %}"></img>
+	</a>
+	</p>
+	<h14> Greek Salad With Tofu </h14>
+	<h15> 126.20 Cal </h15>
+
+	<p>
+	<a href="https://youtu.be/Z9A1b6Lxn-s">
+	<img id="i7" src="{% static 'saladsoya.jfif' %}"></img>
+	</a>
+	</p>
+	<h16> Soya Chunks Salad </h16>
+	<h17> 221.14 Cal </h17>
+	
+	<b><h18>Rotis And Parathas</b></h18>
+
+	<p>
+	<a href="https://youtu.be/Ii6kl2G2e6M">
+	<img id="i8" src="{% static 'rotigobi.jpg' %}"></img>
+	</a>
+	</p>
+	<h19> Cauliflower Stuffed Roti</h19>
+	<h20> 184.06 Cal</h20>
+
+	<p>
+	<a href="https://youtu.be/TxqQjKWz-Uk">
+	<img id="i9" src="{% static 'rotipaneer.jpg' %}"></img></a></p>
+	<h21> Paneer Vegetable Paratha</h21>
+	<h22> 276.32 Cal</h22>
+
+	<p>
+	<a href="https://youtu.be/oMqR0mqgR84">
+	<img id="i10" src="{% static 'rotimooli.jpg' %}"></img></a></p>
+	<h23> Mooli Stuffed Roti</h23>
+	<h24> 175.57 Cal</h24>
+
+	<p>
+	<a href="https://youtu.be/FFQICn37f9g">
+	<img id="i11" src="{% static 'rotiragi.jpg' %}"></img></a></p>
+	<h25> Ragi Missi Roti</h25>
+	<h26> 227.93 Cal</h26>
+
+	<b><h27> Vegetarian Dishes</b> </h27>
+
+	<p>
+	<a href="https://youtu.be/mWCcOcdQxRw">
+	<img id="i12" src="{% static 'chickpeacurry.jfif' %}"></img></a></p>
+	<h28> Chickpea Curry With Coconut </h28>
+	<h29>111.69 Cal </h29>
+
+	<p>
+	<a href="https://youtu.be/unI2zMa32so">
+	<img id="i13" src="{%  static 'onionraita.jpg' %}"></img></a></p>
+	<h30> Onion Raita </h30>
+	<h31> 54.21 Cal </h31>
+
+	<p>
+	<a href="https://youtu.be/yAS8SgzpkEI">
+	<img id="i14" src="{% static 'tofu.jfif' %}"></img></a></p>
+	<h32> Tofu Sandwich </h32>
+	<h33> 181.98 Cal </h33>
+
+	<b><h34> Egg Based Dishes </b></h34>
+
+	<p>
+	<a href="https://youtu.be/UpvIsNxEzW0">
+	<img id="i15" src="{% static 'bhurji.jpg' %}"></img></a></p>
+	<h35> Egg Bhurji </h35>
+	<h36> 140.76 </h36>
+
+	<p>
+	<a href="https://youtu.be/2_Lcn3vMv8k">
+	<img id="i16" src="{% static 'omelette.jpg' %}"></img></a></p>
+	<h37> Omelette Sandwich </h37>
+	<h38> 204.92 </h38>
+
+	<p>
+	<a href="https://youtu.be/fM_ELMrEmNc">
+	<img id="i17" src="{% static 'pancakes.jfif' %}"></img></a></p>
+	<h39> Whole Wheat Pancakes </h39>
+	<h40> 199.93 </h40>
+
+
+
+
+
+{% endblock %}

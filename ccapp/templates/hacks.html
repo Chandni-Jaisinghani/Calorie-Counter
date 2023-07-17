@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<style>
+		h1{
+			font-size:50px;
+			font-style:italic;
+			position:absolute;
+			top:100px;
+			right: 400px;
+			left:500px;
+			color: #7F5A58
+			
+	}
+		h2{
+			font-size:30px;
+			position:absolute;
+			top:200px;
+			right:0px;
+			left:800px;
+			
+			
+
+	}
+		#b1{
+			font-size:30px;
+			position:absolute;
+			right: 800px;
+			top: 400px;
+			
+			
+			
+
+	}
+		#b2{
+			font-size:30px;
+			position:absolute;
+			right: 850px;
+			top: 480px;
+			
+
+	}
+
+		h3{
+			position:absolute;
+			right: 2020px;
+			top:650px;
+			left:20px;
+			font-size:90px;
+			color: #3C565B
+			
+	}
+	
+		h4{
+			position:absolute;
+			top:820px;
+			font-size:270%;
+			background-color: lightblue;
+	}
+		#i1{
+			position:absolute;
+			right: 500px;
+			top:850px;
+			left:400px;
+			
+	}
+		h5{
+			position:absolute;
+			top:1330px;
+			font-size:270%;
+			background-color: pink;
+	}
+		#i2{
+			position:absolute;
+			right: 500px;
+			top:1410px;
+			left:420px;
+			
+	}
+		h6{
+			position:absolute;
+			top:2050px;
+			font-size:270%;
+			background-color: #DCD0FF
+	}
+		#i3{
+			position:absolute;
+			right: 500px;
+			top:2150px;
+			left:420px;
+			
+	}
+		h7{
+			position:absolute;
+			top:2550px;
+			font-size:270%;
+			background-color: #E78A61
+	}
+		#i4{
+			position:absolute;
+			right: 500px;
+			top:2600px;
+			left:420px;
+			
+	}
+		h8{
+			position:absolute;
+			top:3000px;
+			font-size:270%;
+			background-color: #ECC5C0
+	}
+		#i5{
+			position:absolute;
+			right: 500px;
+			top:3050px;
+			left:420px;
+			
+	}
+	
+		h9{
+			position:absolute;
+			top:3500px;
+			font-size:270%;
+			background-color: #FED8B1
+	}
+		#i6{
+			position:absolute;
+			right: 500px;
+			top:3600px;
+			left:420px;
+			
+	}	
+		h10{
+			position:absolute;
+			top:4000px;
+			font-size:270%;
+			background-color: #C9C0BB
+	}
+		#i7{
+			position:absolute;
+			right: 500px;
+			top:4100px;
+			left:420px;
+			
+	}	
+	</style>
+
+
+	<h1> Personalized Diet And WonderFul Hacks</h1>
+	<h2> Welcome {{user.username}}</h2>
+
+	 
+	<br/></br/>
+	<form action="{% url 'ucustomized' %}">
+		<button id="b1" type="submit" style="float: center"> Get Your Customized Plan</button>
+	</form>
+	<form action="{% url 'uviewdetails' %}">
+		<button id="b2" type="submit" style="float: center">View Your Plan</button>
+	</form>
+	<br>
+
+	<h3> Hacks </h3>
+	
+	<h4> After Workout</h4>
+	<img id="i1"  src="{% static 'waterhack.png' %}"></img>
+
+	<h5> Eat your water and stay hydrated</h5>
+	<img id="i2"  src="{% static 'waterfoods.png' %}"></img>
+
+	<h6> Breakfast Smoothies</h6>
+	<img id="i3"  src="{% static 'smoothies.png' %}"></img>
+	
+	<h7> Sweet Cravings</h7>
+	<img id="i4"  src="{% static 'sweet.png' %}"></img>
+	
+	<h8> After Workout</h8>
+	<img id="i5"  src="{% static 'drink.png' %}"></img>
+	
+	<h9> Hydration</h9>
+	<img id="i6"  src="{% static 'hydration.png' %}"></img>
+	
+	<h10> Long Walks</h10>
+	<img id="i7"  src="{% static 'walks.png' %}"></img>
+	
+	
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+	
+{% endblock %}

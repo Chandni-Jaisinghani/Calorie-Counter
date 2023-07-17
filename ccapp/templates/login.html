@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+  h1 {
+    font-size: 50px;
+    font-style: italic;
+    position: absolute;
+    top: 80px;
+    right: 700px;
+    left: 750px;
+    color: #7F5A58
+  }
+#i1{
+	position:absolute;
+	top: 90px;
+	right:1500;
+	left:0;
+					
+
+	}
+</style>
+
+
+<center>
+<h1> Login Page </h1>
+<br><br><br><br><br>
+<img id="i1" src="{% static 'login.jpg' %}"></img> 
+<form method="POST" style="font-size: 30px">
+{% csrf_token %}
+	<label for="un">Enter UserName:</label>
+	<input type="text" name="un" placeholder="enter username" required />
+	<br /><br />
+	<label for="pw">Enter Password:</label>
+	<input type="password" name="pw" placeholder="enter password" required />
+	<br /><br />
+	<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+	<br /><br />
+</form>
+{{msg}}
+	
+    
+
+</center>
+		
+
+{% endblock %}

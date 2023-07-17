@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<style>
+		h1{
+			font-size:45px;
+			font-style:italic;
+			position:absolute;
+			top:20;
+			right: 500px;
+			left:500px;
+			color: #7F5A58
+		}
+		.mydiv {
+			 padding-top: 50px;
+  			padding-right: 0px;
+  			padding-bottom: 90px;
+ 			 padding-left: 790px;
+		}
+		#i1{
+			position:absolute;
+			top: 90px;
+			right:0;
+			left:1350;
+					
+
+		}
+	</style>
+
+<center>
+	
+	<h1> Customized Plan  </h1> 
+	<br><br>
+	<img id="i1" src="{% static 'custom.jpg' %}"></img> 
+</center>
+<b>
+	<div class="mydiv">
+		<form method="POST" style="font-size: 26px">
+		{% csrf_token %}
+			{{ fm.as_p }}
+			<br/>
+			<input type="submit" value="save" />
+			<br/><br/>
+			<p><a href="{% url 'home' %}"> Back</a></p>
+		</form>
+	</div>
+</b>
+
+	{{msg}}
+
+
+		
+{% endblock %}

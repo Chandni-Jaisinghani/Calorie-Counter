@@ -1,0 +1,420 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+	<style>
+	
+  		
+		h1{
+			font-size:80px;
+			font-style:italic;
+			position:absolute;
+			top:70px;
+			right: 600px;
+			left:600px;
+			
+
+	}
+
+		h6{
+			color: #786D5F;
+			position:absolute;
+			top:170px;
+			right: 550px;
+			left:600px;
+ 			font-size:30px;
+			
+			
+
+	}
+
+		h2{
+			font-size:30px;
+			position:absolute;
+			top:200px;
+			right: 500px;
+			left:500px;
+			
+			
+
+	}
+
+		
+		h3{
+			position:absolute;
+			right: 2020px;
+			top:500px;
+			left:20px;
+			font-size:260%;
+	}
+
+		h4{
+			position:absolute;
+			right: 200px;
+			top:600px;
+			left:600px;
+			font-size:210%;
+   			color : #FC6C85
+	}
+
+		hr{
+			margin:420px;
+			 margin-left: auto;
+ 			 margin-right: auto;
+	}	
+			
+		
+		
+		#i1{
+			position:absolute;
+			top: 68px;
+			width: 400px,
+  			height: 300px;
+			right:0;
+			left:1400;
+					
+
+	}
+		#i2{
+			position:absolute;
+			right: 500px;
+			top:650px;
+			left:650px;
+			
+			
+
+	}
+		h5{
+			position:absolute;
+			right:1200px;
+			top:1350px;
+			left:20px;
+			font-size:200%;
+			font-family: Cambria;
+    			
+	}
+		div {
+  			text-align: justify;
+  			text-justify: inter-word;
+	}
+
+		h7{
+			position:absolute;
+			right:1200px;
+			top:1800px;
+			left:20px;
+			font-size:210%;
+			font-family:Brush Script MT;
+			color: #36454F
+			
+	}		
+
+		h8{
+			position:absolute;
+			right:1200px;
+			top:2000px;
+			left:20px;
+			font-size:210%;
+			font-family:Brush Script MT;
+			color: #36454F
+	}
+	
+		h9{
+			position:absolute;
+			right:1200px;
+			top:2170px;
+			left:20px;
+			font-size:210%;
+			font-family:Brush Script MT;
+			color: #36454F
+	}
+		h10{
+			position:absolute;
+			right:1100px;
+			top:2390px;
+			left:20px;
+			font-size:210%;
+			font-family:Brush Script MT;
+			color: #36454F
+	}
+		h11{
+			position:absolute;
+			right:1100px;
+			top:2595px;
+			left:20px;
+			font-size:210%;
+			font-family:Brush Script MT;
+			color: #36454F
+	}
+
+	
+		.mydiv {
+  			
+  			font-size:28px;
+			
+	}
+
+		.mydiv1 {
+  			
+  			font-size:28px;
+			right: 200px;
+			left:600px;
+			margin-top:520px;
+			
+	}
+		h12{
+			position:absolute;
+			right: 200px;
+			top:2900px;
+			left:600px;
+			font-size:210%;
+   			color : #31906E
+	}
+
+		#i3{
+			position:absolute;
+			right: 500px;
+			top:3000px;
+			left:650px;
+			
+			
+
+	}
+
+		h13{
+			position:absolute;
+			right:1200px;
+			top:3300px;
+			left:20px;
+			font-size:210%;
+			font-family:Comic Sans;
+			color: #E78A61
+			
+	}	
+
+		h14{
+			position:absolute;
+			right:1200px;
+			top:3520px;
+			left:20px;
+			font-size:210%;
+			font-family: Comic Sans;
+			color: #E78A61
+			
+	}	
+
+		h15{
+			position:absolute;
+			right:1200px;
+			top:3760px;
+			left:20px;
+			font-size:210%;
+			font-family:Comic Sans;
+			color: #E78A61
+			
+	}	
+
+		h16{
+			position:absolute;
+			right:1200px;
+			top:4100px;
+			left:20px;
+			font-size:210%;
+			font-family:Comic Sans;
+			color: #E78A61
+			
+	}	
+
+		h17{
+			position:absolute;
+			right:1200px;
+			top:4300px;
+			left:20px;
+			font-size:210%;
+			font-family:Comic Sans;
+			color: #E78A61
+			
+	}	
+
+		h18{
+			position:absolute;
+			right:1200px;
+			top:4500px;
+			left:20px;
+			font-size:210%;
+			font-family:Comic Sans;
+			color: #E78A61
+			
+	}	
+		h19{
+			position:absolute;
+			right:1200px;
+			top:4700px;
+			left:20px;
+			font-size:210%;
+			font-family:Comic Sans;
+			color: #E78A61
+			
+	}	
+
+		
+		
+	</style>
+
+
+
+
+
+	<h1 style="color:#045F5F;"> Calorie Counter </h1>
+	<h6> Eating is a Necesity, But Eating Healthy is an Art</h6>
+
+	
+
+	
+	<img id="i1" src="{% static 'calorie.jpeg' %}"></img> 
+	<br/></br/>
+	
+	<br>
+
+	<h3> BLOGS </h3>
+
+	<hr>
+
+	<b><h4>5 Health Benefits of Morning Walking Regularly</b></h4>
+
+	<img id="i2" src="{% static 'walking.jfif' %}"></img>
+ 
+	<div class= "mydiv">To step into a healthier world, all you need to do is put one foot in front of the other. So, start going out for walks. 
+	It has a zillion health benefits.While many of us consider weight loss the only use of walking, this article lists 13 benefits of walking.</div></style>
+	<br/>
+
+	<div class= "mydiv">Out of the many physical activities for a healthy lifestyle, walking always shines at the top. 
+	Unfortunately, many people find heavy exercise and jogging difficult, and some even lack motivation.
+ 	A simple and effective alternative to this is a walk. The benefits of regular walks are potent and effective for a healthier lifestyle
+	You do need not go to the gym or hire a personal trainer. You also do not need any gear or equipment. 
+	All you need is a good pair of walking shoes and an open area, like a park or walking track. 
+	The greenery around is a treat to the eyes. In addition, it is a break from the monotony of this concrete jungle in which we live.</div>
+	</br>
+	
+	
+
+	<b><h5>Morning Walking: Why is it so popular?</b></h5>
+	<br/><br/><br/><br/>
+		
+	<div  class= "mydiv">Early to bed, early to rise makes one healthy, wealthy and wise”. We have all heard this saying in some phase of our life. 
+	But have you ever wondered why this is a classic saying and is considered a universal truth?
+	You name any successful person, and there is one thing all have in common. Going to bed at a stipulated time, 
+	waking up early and performing physical activity. With minimum physical activity during the day, 
+	it may also get tough to hit the gym.</div> <br/>
+
+	<div  class= "mydiv">Therefore, going for a walk every day is the best way to indulge in physical activity. 
+	Hitting the gym every day may be difficult for those who wish to start exercising. It also gets difficult for those who have a hectic work 
+	schedule. So, to start building a routine and reap the benefits of any physical activity, walking is your best bet. 
+	A regular walking schedule can help you more than just lose weight. You can prevent many health problems concerning your heart, 
+	joints, mental health (depression, anxiety, nervousness), lung capacity, immune system, and body strength. 
+	As a bonus, walking regularly also helps your skin glow.</div>
+
+	<b><h7>1. Reduces the Risk of Diabetes</b></h7>
+	<br/><br/></br>
+
+	<div class= "mydiv">A brisk walk can help you burn about 300 calories. It helps you lose body fat and use up stored sugars. The longer you walk, the more 
+	calories you will burn.In addition, morning walks also help curb the sweet tooth.It helps cut down sugar cravings and is beneficial to our health.
+	Morning walks are also beneficial for people who already have diabetes and are looking to stabilise their sugar levels</div><br>
+
+
+	<b><h8>2. It Helps You Sleep Better</b></h8>
+	<br/><br/><br/>
+
+	<div class= "mydiv"> Research says that a regular morning walk schedule can help you. It helps calm your mind and utilize the stored energy in your body. 
+	In addition, it helps your body stay active throughout the day. As a result, you can get a sound sleep at night</div><br>
+
+	<b><h9>3. It Increases Lung Capacity</b></h9>
+	<br/><br/>
+
+	<div class= "mydiv"> study reveals that walking can help your lungs pump more oxygen, depending on your speed and terrain. Walking helps increase the energy pool 
+	in your cells and increase the oxygen holding capacity of your lungs.In addition, your body muscles and tissues need 
+	higher oxygen levels to carry out essential enzyme reactions when you walk briskly.</div><br>
+	<br/>
+	
+	<b><h10>4. Morning Walk Can Help Deal with Depression</b></h10>
+	<br/><br/>
+	
+	<div class= "mydiv">Inadequate production of natural pain killers or stress balancing hormones endorphins in our body may lead to depression. 
+	A 45 minute morning walk every day can help the release and proper flow of endorphins in your body.It will help alleviate the symptoms of
+     depression by making you energetic, positive, and joyful. It also reduces your anxiety and nervousness, allowing you to stay more proactive.</div><br>
+		
+	<b><h11>5. Walking Eases Muscle and Joint Pain</b></h11>
+	<br/><br/><br/>
+	
+	<div  class= "mydiv">Your elbows, knees, and hips are most prone to joint pains when you grow older. Sore muscles often accompany it. In addition, you 
+	also begin to lose bone density, making them weak and brittle.Walking gives enough movement to your joints and muscles. It also gives 
+	them enough energy to relieve the stiffness and pain. In addition, walking helps lubricate and strengthen the joints and the muscles. 
+	That, in turn, helps in easing muscle and joint pain.</div><br>
+ 
+
+   	<b><h12>7 Best Low Carb Vegetables to Include in Your Diet</b></h12>
+  
+	<img id="i3" src="{% static 'lowcarb.jpg' %}"></img>
+
+	<b><h13>Cucumber</b></h13>
+	
+
+	<div class="mydiv1">According to the USDA, 100 grams of cucumber holds 3.63 grams of carbohydrate. Therefore, it is an ideal vegetable for weight loss 
+	as it is significantly low in calories and carbohydrates. Cucumber is a very popular ingredient in vegetable salad. It contains various essential nutrients and high water 
+	content. It is rich in antioxidants that help fight free radicals in the body.Furthermore, cucumbers have benefits outside the body as well. It serves various skin 
+	benefits; it eases sunburn pain and swelling when applied topically. Peeling the cucumber before eating will reduce its carb content even more.</div><br><br><br>
+
+	<b><h14>Spinach</b></h14>
+	
+	<div class="mydiv">It is very low in carbs and cooking makes the carbs more concentrated because the leaves lose their volume. Spinach is a leafy green vegetable 
+	full of iron, potassium, and vitamins. It is considered very good for eye health and for coping with iron deficiencies. It also aids in digestion.
+	The greener the spinach is, the more nutritional properties it will have. You can add spinach in a variety of ways to your diet. It can also be prepared as a healthy 
+	and nutritious snack, for example, baked spinach chips.</div><br><br><br>
+
+	<b><h15>Cauliflower</b></h15>
+
+	<div class="mydiv">Cauliflower is one of the most popular low-carb vegetables. Having a mild taste, it can be a great healthy alternative to white rice and potatoes.
+	Cauliflower is a storehouse of vitamins and antioxidants. It is tasty and beneficial for the body in many ways. Furthermore, It helps to fight cancer and supports a 
+	healthy heart.It is low in calories and makes you feel fuller; hence, it is an ideal vegetable for those who want to lose weight or go for a low-carb diet. Vitamins present 
+	in cauliflower help keep healthy skin. Minerals like calcium assists in keeping the bones and teeth healthy. It is a cruciferous vegetable and has several health benefits.
+	However, cruciferous vegetables contain thiocyanates, which block iodine absorption. Therefore, it is not suitable for people suffering from hypothyroidism</div><br><br>
+	<br>
+	<b><h16>Celery</b></h6>
+	
+	<div class="mydiv">Celery is a part of the Apiaceae family. Fibres present in celery are beneficial for digestive and cardiovascular system health. Celery is loaded 
+	with antioxidants and contains Vitamin C. It is also rich in phytochemicals known as phthalides. Phthalides enhance blood flow in different body parts and relax 
+	artery walls, lowering blood pressure. It has a very low carbohydrate count; therefore, it is suitable for a low-carb diet. </div><br><br><br>
+
+	<b><h17>Zucchini</b></h17>
+
+	<div class="mydiv">Zucchini is a vegetable that is very low in carbs. It belongs to the Cucurbitaceae family and is a fantastic source of essential micronutrients.
+	You can prevent gastrointestinal issues with zucchini since it is rich in fibre. Some other benefits include controlling diabetes, improved vision, and 
+	promoting digestion. It is high in fibre and has a low-calorie count.</div><br><br><br>
+
+	<b><h18>Iceberg lettuce</b></h18>
+
+	<div class="mydiv">There are various types of lettuce available; however, iceberg lettuce has the lowest number of carbs among them. 
+	Romaine lettuce can also be considered a low carbohydrate leafy vegetable because the carb content is 3.29 grams per 100 grams. This green vegetable 
+	serves many health benefits. It is rich in vitamins and minerals, especially vitamin A (502 IU). Vitamin A improves eye health and may help cure conditions 
+	such as night blindness.</div><br><br><br>
+
+	<b><h19>Asparagus</b></h19>
+
+	<div class="mydiv">This vegetable is very low in carbohydrate count. Therefore, you can include it in a keto or a low-carb diet. Asparagus is rich in essential vitamins 
+	and minerals. Since it is nutrient-dense and low in calories, it is excellent for weight loss. It has a significant amount of fibre, folate, vitamin A, C, and K. 
+	It has several health benefits, such as lowering blood pressure, managing diabetes, and improved digestion.</div><br><br><br>
+
+	
+
+
+
+	
+{% endblock %}
+		
+
+		
+	
+		
+	
+	
+	
+	

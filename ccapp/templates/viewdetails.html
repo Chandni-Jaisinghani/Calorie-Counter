@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	
+	<style>
+		
+		.names { font-weight: bold; }
+		.names {font-size: 25px;}
+		
+		
+		
+		h1{
+			font-size:50px;
+			font-style:italic;
+			position:absolute;
+			top:20;
+			right: 500px;
+			left:500px;
+			color:#7F5A58 
+			
+
+	}
+		#i1{
+			position:absolute;
+			top: 90px;
+			right:0;
+			left:1350;
+					
+
+	}
+		
+	</style>
+
+	<h1> View Plan </h1>
+	<br><br><br><br>
+	<img id="i1" src="{% static 'viewplan.jfif' %}"></img> 
+	
+	{% for viewplan in view_plan %}
+		<tr>
+		<p style="font-size:25px;"><td><span class="names">Username</span>: {{ viewplan.usr}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Total Carbs</span>: {{ viewplan.total_carbs}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Total Protein</span> : {{ viewplan.total_protein}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Total Fat</span> :{{ viewplan.total_fats}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">BMI</span> :{{ viewplan.bmi}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Foods Intake</span> :{{ viewplan.food_intake}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Avoid such Foods</span> :{{ viewplan.avoid_such_foods}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Breakfast Options</span> :{{ viewplan.breakfast_options}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Mid Snack Options</span> :{{ viewplan.mid_snack_options}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Lunch Options</span> :{{ viewplan.lunch_options}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Dinner Options</span> :{{ viewplan.dinner_options}}</td></p>
+		<p style="font-size:25px;"><td><span class="names">Tips</span> : {{ viewplan.tips}}</td></p>
+		<br><br>
+		<center>
+		<p style="font-size:25px;"><a href="{% url 'home' %}" > Back</a></p>
+		</center>
+		
+		
+	</tr>
+	{% endfor %}
+
+{% endblock %}

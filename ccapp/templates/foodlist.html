@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  h1 {
+    font-size: 50px;
+    font-style: italic;
+    position: absolute;
+    top: 70px;
+    right: 600px;
+    left: 750px;
+    color: #7F5A58
+  }
+
+	table {
+	background-color: #FFE6E8;
+}
+</style>
+
+<h1> Food List </h1>
+<div class="container">
+   <div class="border rounded p-4 m-4">
+       
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>SrNo</th>
+		<th>Image</th>
+		<th>Food Name</th>
+                    <th>Category</th>
+		<th>Carbs ( per 100 grams)</th>
+                    <th>Protein ( per 100 grams)</th>
+                    <th>Fats ( per 100 grams)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+	{% for food in food_list %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td><img style="height: 80px;" class="rounded-circle" src="{{food.image.url}}" class="card-img-top"></td>
+                    <td><p style= font-size:20px;> {{food.food_name}}</p></td>
+                    <td><p style= font-size:20px;>{{food.category}}</p></td>
+                    <td><p style= font-size:20px;>{{food.carbs}}</p></td>
+                    <td><p style= font-size:20px;>{{food.protein}}</p></td>
+		<td><p style= font-size:20px;>{{food.fat}}</p></td>
+                </tr>
+	{% endfor %}
+	
+
+
+
+ {% endblock %}

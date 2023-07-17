@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}	
+<style>
+  		h1 {
+    			font-size: 50px;
+    			font-style: italic;
+    			position: absolute;
+    			top: 90px;
+    			right: 700px;
+    			left: 750px;
+    			color: #7F5A58
+  		}
+
+		.mydiv {
+				padding-top: 30px;
+  				padding-right: 0px;
+  				padding-bottom: 90px;
+ 				padding-left: 750px;
+			}
+		#i1{
+			position:absolute;
+			top: 90px;
+			right:1350;
+			left:0;
+					
+
+		}
+</style>
+
+
+<center>
+	<h1> Add Food Item  </h1>
+	<br/><br/><br/><br/>
+	<p style="font-size: 30px">Enter the details of a new food item</p>
+	<img id="i1" src="{% static 'addfoodimage.jpg' %}"></img> 
+	
+</center>
+<b>
+	
+		<div class="mydiv">
+			<form method="POST" enctype="multipart/form-data" style="font-size: 26px">
+			{% csrf_token %}
+				{{fm.as_p}}
+				<br/>
+				<input type="submit" value="save" />
+				<br/><br/>
+				<p><a href="{% url 'home' %}"> Back</a></p>
+			</form>
+		</div>
+	{{msg}}
+</b>
+	
+
+		
+		
+	
+{% endblock %}
